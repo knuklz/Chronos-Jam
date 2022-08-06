@@ -21,8 +21,8 @@
     "name": "Chronos-Jam",
     "description": "Itch.io Game Jam entry",
     "author": "",
-    "windowWidth": 128,
-    "windowHeight": 128,
+    "windowWidth": 800,
+    "windowHeight": 600,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -252,7 +252,7 @@
           "conditions": [
             {
               "type": {
-                "value": "DepartScene"
+                "value": "BuiltinCommonInstructions::Always"
               },
               "parameters": [
                 ""
@@ -273,6 +273,37 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "1",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
