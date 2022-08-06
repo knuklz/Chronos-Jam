@@ -74,6 +74,24 @@
         "name": "Player-1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -105,7 +123,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 4.300000000000002,
+        "zoomFactor": 1.9000000000000008,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -123,6 +141,22 @@
           "x": 47,
           "y": 44,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 57,
+          "layer": "",
+          "locked": false,
+          "name": "NewTiledSprite",
+          "persistentUuid": "54225b01-3b44-4123-baab-38f073a26310",
+          "width": 417,
+          "x": -84,
+          "y": 116,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -193,15 +227,23 @@
         },
         {
           "assetStoreId": "",
-          "height": 32,
+          "height": 16,
           "name": "NewTiledSprite",
           "tags": "",
-          "texture": "",
+          "texture": "NewFile-1-1.png",
           "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
+          "width": 16,
           "variables": [],
           "effects": [],
-          "behaviors": []
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ]
         }
       ],
       "events": [
@@ -258,6 +300,10 @@
         }
       ],
       "behaviorsSharedData": [
+        {
+          "name": "Platform",
+          "type": "PlatformBehavior::PlatformBehavior"
+        },
         {
           "name": "PlatformerObject",
           "type": "PlatformBehavior::PlatformerObjectBehavior"
