@@ -21,8 +21,8 @@
     "name": "Chronos-Jam",
     "description": "Itch.io Game Jam entry",
     "author": "",
-    "windowWidth": 800,
-    "windowHeight": 600,
+    "windowWidth": 128,
+    "windowHeight": 128,
     "latestCompilationDirectory": "",
     "maxFPS": 60,
     "minFPS": 20,
@@ -65,6 +65,15 @@
         "name": "placeholder.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Player-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Player-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -96,7 +105,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 1,
+        "zoomFactor": 4.300000000000002,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -105,14 +114,14 @@
         {
           "angle": 0,
           "customSize": false,
-          "height": 0,
+          "height": 230.6597900390625,
           "layer": "",
           "locked": false,
           "name": "Player",
           "persistentUuid": "d4f95af3-6b51-42e2-aece-071bfdf95bad",
-          "width": 0,
-          "x": 307,
-          "y": 228,
+          "width": 226,
+          "x": 47,
+          "y": 44,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -152,16 +161,16 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "Player",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "timeBetweenFrames": 0.08,
+                  "timeBetweenFrames": 0.07999999821186066,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": false,
-                      "image": "placeholder.png",
+                      "image": "Player-1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -181,9 +190,49 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "NewTiledSprite",
+          "tags": "",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "CentreCamera"
+              },
+              "parameters": [
+                "",
+                "Player",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 32,
